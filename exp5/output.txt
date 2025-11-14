@@ -1,0 +1,34 @@
+[2025-09-23 14:39:23] === AES ===
+[2025-09-23 14:39:23] Mode: CBC
+[2025-09-23 14:39:23] Key (hex): 7365637265746b657931323334353637
+[2025-09-23 14:39:23] IV (hex): de79dc277e558b5bc105149077bef8c6
+[2025-09-23 14:39:23] Plaintext: in the bleack midwinter
+[2025-09-23 14:39:23] Ciphertext (hex): c18e178fd5c7453a65550516cb4ddc7975a141a881dcb2b63a3d8b7f1954f91b
+[2025-09-23 14:39:23] Decrypted: in the bleack midwinter
+[2025-09-23 14:39:23] 
+[2025-09-23 14:41:13] === RSA ===
+[2025-09-23 14:41:13] Key size (bits): 1024
+[2025-09-23 14:41:13] Key generation time (s): 0.112
+[2025-09-23 14:41:13] Public exponent: 65537
+[2025-09-23 14:41:13] Plaintext: can you hear the music,the robert?
+[2025-09-23 14:41:13] Ciphertext (hex): 5595982b69079f9effccc24587a5a7746336c2b8af2d58d0bca43c1e4f87b2289c26553cde4ffeb47b6e6b6da9210f5a4fea335570adb744c29efd41123a729abb68d578148be423cdb8e5ca3716f3b6ac122c834f3a54d5548d66715b3b0d6c1b67a1d50e1d08736d2415c317947a8c7c3d43674158068a1eeea55a33ef47da
+[2025-09-23 14:41:13] Decrypted: can you hear the music,the robert?
+[2025-09-23 14:41:13] 
+[2025-09-23 14:42:04] === Hybrid ===
+[2025-09-23 14:42:04] AES mode: CBC
+[2025-09-23 14:42:04] Plaintext: i dont like juice 
+[2025-09-23 14:42:04] Encrypted session key (hex): 6b9eee34e0ca78a591b1bda4a33b5778f73a8c3d561ee3ac77dfd7da4c2e182be55094cdeb8f0539d39e5c4f488d1df9e24ec7bf5cbc0b899879afc47e00eea430d63d973345deef848731097c3d10c019eb0a24a62fd355be2dad7bf8ab6bff542735c4aa69881a3fa7de681857d5c62ee5511f99e5b61ba5cf140cd349bd30
+[2025-09-23 14:42:04] IV (hex): a95df066273dac73022dd8a1a0179d5d
+[2025-09-23 14:42:04] Ciphertext (hex): 5b8fcd73a9cb81c3794925670f9cac3286a093e621f0935bc5474d287b88a8fd
+[2025-09-23 14:42:04] Decrypted: i dont like juice 
+[2025-09-23 14:42:04] 
+[2025-09-23 14:42:08] === Performance Comparison ===
+[2025-09-23 14:42:08] RSA modulus bits: 1023, k bytes: 128, max chunk: 117
+[2025-09-23 14:42:08] Pure RSA size 1024 bytes: encrypt 0.002s decrypt 0.062s total 0.064s success True
+[2025-09-23 14:42:09] Hybrid size 1024 bytes: encrypt 0.027s decrypt 0.048s total 0.075s success True
+[2025-09-23 14:42:09] Pure RSA size 10240 bytes: encrypt 0.005s decrypt 0.340s total 0.345s success True
+[2025-09-23 14:42:10] Hybrid size 10240 bytes: encrypt 0.227s decrypt 0.436s total 0.663s success True
+[2025-09-23 14:42:13] Pure RSA size 102400 bytes: encrypt 0.050s decrypt 3.346s total 3.396s success True
+[2025-09-23 14:42:20] Hybrid size 102400 bytes: encrypt 2.367s decrypt 4.517s total 6.884s success True
+[2025-09-23 14:42:20] Conclusion: Hybrid should be much faster and more practical for larger messages.
+[2025-09-23 14:42:20] 
